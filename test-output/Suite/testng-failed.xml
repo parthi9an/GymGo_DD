@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="SearchClasses(failed)">
+    <classes>
+      <class name="dd_test.SearchClasses">
+        <methods>
+          <include name="searchForClasses"/>
+        </methods>
+      </class> <!-- dd_test.SearchClasses -->
+      <class name="dd_test.FAQ">
+        <methods>
+          <include name="initAll"/>
+          <include name="QuitDriver"/>
+        </methods>
+      </class> <!-- dd_test.FAQ -->
+    </classes>
+  </test> <!-- SearchClasses(failed) -->
+  <test name="TestMySystem(failed)">
+    <classes>
+      <class name="dd_test.TestMySystem">
+        <methods>
+          <include name="SystemCheck"/>
+        </methods>
+      </class> <!-- dd_test.TestMySystem -->
+      <class name="dd_test.FAQ">
+        <methods>
+          <include name="initAll"/>
+          <include name="QuitDriver"/>
+        </methods>
+      </class> <!-- dd_test.FAQ -->
+    </classes>
+  </test> <!-- TestMySystem(failed) -->
+</suite> <!-- Failed suite [Suite] -->

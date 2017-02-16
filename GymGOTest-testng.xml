@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<test name="ForgotPassword">
+		<classes>
+			<class name="dd_test.ForgotPassword" />
+		</classes>
+	</test>
+
+	<test name="ClientSignUp">
+		<classes>
+			<class name="dd_test.ClientSignUp" />
+		</classes>
+	</test>
+
+	<test name="TrainerSignUp">
+		<classes>
+			<class name="dd_test.TrainerSignUp" />
+		</classes>
+	</test>
+
+	<test name="TrainerLoginTest">
+		<classes>
+			<class name="dd_test.TrainerLoginTest" />
+		</classes>
+	</test>
+
+	<test name="CreateNewClass">
+		<classes>
+			<class name="dd_test.CreateNewClass" />
+		</classes>
+	</test>
+
+	<test name="LogOut">
+		<classes>
+			<class name="dd_test.LogOut" />
+		</classes>
+	</test>
+
+	<test name="ClientLoginTest">
+		<classes>
+			<class name="dd_test.ClientLoginTest" />
+		</classes>
+	</test>
+
+	<test name="MySessions">
+		<classes>
+			<class name="dd_test.MySessions" />
+		</classes>
+	</test>
+
+	<test name="SearchClasses">
+		<classes>
+			<class name="dd_test.SearchClasses" />
+		</classes>
+	</test>
+
+	<test name="MyProfile">
+		<classes>
+			<class name="dd_test.MyProfile" />
+		</classes>
+	</test>
+
+	<test name="BuyPoints">
+		<classes>
+			<class name="dd_test.BuyPoints" />
+		</classes>
+	</test>
+	
+	<test name="TestMySystem">
+		<classes>
+			<class name="dd_test.TestMySystem" />
+		</classes>
+	</test>
+
+	<test name="TermsofServicePrivacyPolicyContactSupport">
+		<classes>
+			<class name="dd_test.TermsofServicePrivacyPolicyContactSupport" />
+		</classes>
+	</test>
+		 
+	<test name="FAQ">
+		<classes>
+			<class name="dd_test.FAQ" />
+		</classes>
+	</test>
+
+
+</suite> <!-- Suite -->
