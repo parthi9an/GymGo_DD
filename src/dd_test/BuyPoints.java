@@ -48,6 +48,11 @@ public class BuyPoints extends testCore {
 		driver.findElement(By.xpath("//*[@id='search']")).click();
 
 		// Pay with my PayPal account
+
+		//Check the PayPal login  is displaying
+		if (driver.findElements(By.xpath("//*[@id='loadLogin']")).size()!=0)
+		{
+		
 		driver.findElement(By.xpath("//*[@id='loadLogin']")).click();
 
 		// Login to Paypal use email id and password
@@ -61,13 +66,21 @@ public class BuyPoints extends testCore {
 		// Click Paypal Login
 		driver.findElement(By.xpath("//*[@id='submitLogin']")).click();
 
-		// Click PayNow button
+		// Add explicit wait then Click PayNow button
+		
 		driver.findElement(By.xpath("//*[@id='continue_abovefold']")).click();
 
 		// Check successfully purchased window displayed
 
 		WebElement successfullyPurchased = (new WebDriverWait(driver, 20)).until(ExpectedConditions
 				.presenceOfElementLocated(By.xpath("//*[@id='merchantredirectform']/div/div/div[2]/h2")));
-		System.out.println("successfullyPurchased " + successfullyPurchased);
+		System.out.println("successfullyPurchased " + successfullyPurchased.getText());
+		} // end if
+		else // Click to return to store
+		{
+			System.out.println("Purchase cancelled....");
+			driver.findElement(By.linkText("Cancel and return to test facilitator's Test Store")).click();
+		}
+		
 	}// BuyPackageNow
 }

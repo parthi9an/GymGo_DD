@@ -36,15 +36,15 @@ public class testCore {
 		if (driver==null)
 		{
 			//Load the config properties file
-			FileInputStream fis = new FileInputStream((System.getProperty("user.dir")+"\\src\\dd_properties\\config.properties"));
+			FileInputStream fis = new FileInputStream((System.getProperty("user.dir")+"/src/dd_properties/config.properties"));
 			config.load(fis);
 			
 			//Load the object repository file
-			fis = new FileInputStream((System.getProperty("user.dir")+"\\src\\dd_properties\\object.properties"));
+			fis = new FileInputStream((System.getProperty("user.dir")+"/src/dd_properties/object.properties"));
 			object.load(fis);
 			
 			// Load GymGo test data Excel File and provide location
-			excelRead=new ExcelReadWrite((System.getProperty("user.dir")+"\\src\\dd_properties\\GymGoTestData.xlsx"));
+			excelRead=new ExcelReadWrite((System.getProperty("user.dir")+"/src/dd_properties/GymGoTestData.xlsx"));
 			
 			//Browser Check
 			if (config.getProperty("browser").equals("firefox"))
