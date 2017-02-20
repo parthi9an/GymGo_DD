@@ -58,7 +58,7 @@ public class testCore {
 			}
 			else if (config.getProperty("browser").equals("chrome"))
 			{
-				System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", "/usr/local/share/chromedriver");
 				driver = new ChromeDriver();
 			}
 		}
